@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>S KOTA'S HOTEL MUNTAJ - Authentic Indian Cuisine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="#home" class="logo">S KOTA'S HOTEL MUNTAJ</a>
+      
+      <!-- Mobile Menu Button -->
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <!-- Mobile Navigation -->
+    <nav class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="#home" class="mobile-link">Home</a></li>
+        <li><a href="#menu" class="mobile-link">Menu</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-background"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1>Authentic South Indian Flavors</h1>
+        <p>Experience the rich taste of traditional South Indian and Indian cuisine with our carefully crafted recipes.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-down">
+      <a href="#highlights">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Highlights Section -->
+  <section id="highlights" class="highlights section-fade-in">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Specialties</h2>
+        <div class="divider"></div>
+      </div>
+      
+      <div class="highlights-grid">
+        <!-- Highlight 1 -->
+        <div class="highlight-card">
+          <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Dosa">
+          <div class="card-content">
+            <h3>South Indian Dosa</h3>
+            <p>Our crispy dosas are made fresh with fermented rice batter, served with authentic sambar and chutneys.</p>
+            <a href="#menu" class="card-link">View on Menu</a>
+          </div>
+        </div>
+        
+        <!-- Highlight 2 -->
+        <div class="highlight-card">
+          <img src="https://images.unsplash.com/photo-1589647363581-41888b8a8013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Biryani">
+          <div class="card-content">
+            <h3>Hyderabadi Biryani</h3>
+            <p>Aromatic basmati rice layered with tender meat and fragrant spices, slow-cooked to perfection.</p>
+            <a href="#menu" class="card-link">View on Menu</a>
+          </div>
+        </div>
+        
+        <!-- Highlight 3 -->
+        <div class="highlight-card">
+          <img src="https://images.unsplash.com/photo-1605197161470-5d2110652d79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Indian Sweets">
+          <div class="card-content">
+            <h3>Traditional Sweets</h3>
+            <p>Indulge in our selection of authentic Indian sweets, from gulab jamun to rasgulla and more.</p>
+            <a href="#menu" class="card-link">View on Menu</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section-cta">
+        <a href="#menu" class="btn btn-secondary">Explore Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu section-fade-in">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Menu</h2>
+        <div class="divider"></div>
+        <p class="section-description">Explore our carefully crafted dishes made with locally sourced ingredients and inspired by both traditional and contemporary culinary techniques.</p>
+      </div>
+      
+      <!-- Menu Filters -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="starters">Starters</button>
+        <button class="filter-btn" data-filter="veg">Vegetarian</button>
+        <button class="filter-btn" data-filter="nonveg">Non-Vegetarian</button>
+        <button class="filter-btn" data-filter="breads">Breads</button>
+        <button class="filter-btn" data-filter="desserts">Desserts</button>
+        <button class="filter-btn" data-filter="drinks">Drinks</button>
+      </div>
+      
+      <!-- Menu Items Grid -->
+      <div class="menu-grid">
+        <!-- Starters -->
+        <div class="menu-item" data-category="starters">
+          <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Samosas">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3>Vegetable Samosas</h3>
+              <span class="price">₹180</span>
+            </div>
+            <p>Crispy pastry filled with spiced potatoes, peas, and aromatic herbs, served with tamarind and mint chutneys.</p>
+          </div>
+        </div>
+        
+        <div class="menu-item" data-category="starters">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Pakoras">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3>Assorted Pakoras</h3>
+              <span class="price">₹200</span>
+            </div>
+            <p>Mixed vegetable fritters made with chickpea flour, served with house-made mint chutney.</p>
+          </div>
+        </div>
+        
+        <div class="menu-item" data-category="starters">
+          <img src="https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+               alt="Chicken 65">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3>Chicken 65</h3>
+              <span class="price">₹280</span>
+            </div>
+            <p>Spicy, deep-fried chicken marinated with ginger, garlic, and traditional South Indian spices.</p>
+          </div>
+        </div>
+        
+        <!-- Vegetarian Main Courses -->
+        <div class="menu-item" data-category="veg">
+          <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Masala Dosa">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3>Masala Dosa</h3>
+              <span class="price">₹320</span>
+            </div>
+            <p>Crispy fermented rice crepe filled with spiced potato, served with sambar and coconut chutney.</p>
+          </div>
+        </div>
+        
+        <div class="menu-item" data-category="veg">
+          <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Vegetable Biryani">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3>Vegetable Biryani</h3>
+              <span class="price">₹350</span>
+            </div>
+            <p>Fragrant basmati rice cooked with mixed vegetables, saffron, and aromatic spices, served with raita.</p>
+          </div>
+        </div>
+        
+        <div class="menu-item" data-category="veg">
+          <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Paneer Butter Masala">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3>Paneer Butter Masala</h3>
+              <span class="price">₹330</span>
+            </div>
+            <p>Cottage cheese cubes in a rich, creamy tomato sauce with aromatic spices and butter.</p>
+          </div>
+        </div>
+        
+        <!-- Non-Vegetarian Main Courses -->
+        <div class="menu-item" data-category="nonveg">
+          <img src="https://images.unsplash.com/photo-1701579231305-d84d8af9a3fd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+               alt="Chicken Biryani">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3>Hyderabadi Chicken Biryani</h3>
+              <span class="price">₹400</span>
+            </div>
+            <p>Fragrant basmati rice layered with tender chicken and aromatic spices, slow-cooked to perfection.</p>
+          </div>
+        </div>
+        
+        <div class="menu-item" data-category="nonveg">
+          <img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Butter Chicken">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3>Butter Chicken</h3>
+              <span class="price">₹380</span>
+            </div>
+            <p>Tender chicken cooked in a rich, creamy tomato sauce with butter and aromatic spices.</p>
+          </div>
+        </div>
+        
+        <div class="menu-item" data-category="nonveg">
+          <img src="https://images.unsplash.com/photo-1626508035297-0cd27c397d67?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+               alt="Fish Curry">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3>Kerala Fish Curry</h3>
+              <span class="price">₹420</span>
+            </div>
+            <p>Fresh fish simmered in coconut milk with curry leaves, mustard seeds, and traditional Kerala spices.</p>
+          </div>
+        </div>
+        
+        <!-- Breads -->
+        <div class="menu-item" data-category="breads">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Naan">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3>Assorted Naan Basket</h3>
+              <span class="price">₹200</span>
+            </div>
+            <p>Selection of plain, butter, garlic, and cheese naan breads baked in our traditional tandoor oven.</p>
+          </div>
+        </div>
+        
+        <div class="menu-item" data-category="breads">
+          <img src="https://images.unsplash.com/photo-1630409351217-bc4fa6422075?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Parotta">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3>Kerala Parotta</h3>
+              <span class="price">₹180</span>
+            </div>
+            <p>Flaky, layered flatbread made with all-purpose flour, perfect for scooping up curries.</p>
+          </div>
+        </div>
+        
+        <!-- Desserts -->
+        <div class="menu-item" data-category="desserts">
+          <img src="https://media.istockphoto.com/id/1188000786/photo/gulab-jamun-in-bowl-on-wooden-background-indian-dessert-or-sweet-dish.jpg?s=2048x2048&w=is&k=20&c=yxCEnqS9Hj9wKQRsEF_OtAA04Mypog76up6Og7fzanI=" 
+               alt="Gulab Jamun">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3>Gulab Jamun</h3>
+              <span class="price">₹160</span>
+            </div>
+            <p>Soft milk solids dumplings soaked in rose and cardamom flavored sugar syrup.</p>
+          </div>
+        </div>
+        
+        <div class="menu-item" data-category="desserts">
+          <img src="https://media.istockphoto.com/id/515853026/photo/traditional-rasmalai-or-ras-malai-indian-dessert-bengali-sweet.jpg?s=1024x1024&w=is&k=20&c=gSOKfjR5dKCrePmLwfhFLDkCpYIL6QjlzUM7jo113ZA=" 
+               alt="Rasmalai">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3>Rasmalai</h3>
+              <span class="price">₹180</span>
+            </div>
+            <p>Soft cottage cheese patties soaked in creamy, cardamom-infused milk, garnished with pistachios.</p>
+          </div>
+        </div>
+        
+        <!-- Drinks -->
+        <div class="menu-item" data-category="drinks">
+          <img src="https://images.unsplash.com/photo-1527661591475-527312dd65f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Masala Chai">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3>Masala Chai</h3>
+              <span class="price">₹90</span>
+            </div>
+            <p>Traditional Indian spiced tea with ginger, cardamom, cinnamon, and other aromatic spices.</p>
+          </div>
+        </div>
+        
+        <div class="menu-item" data-category="drinks">
+          <img src="https://images.unsplash.com/photo-1589734580748-6d9421464885?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Mango Lassi">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3>Mango Lassi</h3>
+              <span class="price">₹110</span>
+            </div>
+            <p>Refreshing yogurt drink blended with ripe mangoes, cardamom, and a touch of honey.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section-cta">
+        <a href="#" class="btn btn-outline-primary">Download Full Menu (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section-fade-in">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Our Story</h2>
+          <div class="divider divider-left"></div>
+          <p>S Kota's Hotel Muntaj, a well-known establishment in Srungavarapu Kota, was founded by individuals who built the legacy of the hotel. The hotel's founders are acknowledged and thanked for their vision, which led to the establishment of the family-run business. The current owners are proud to continue the legacy and work hard to keep the founders' memory alive.</p>
+          <p>Muntaj hotel was founded by Sheik Mahaboob Basha and Sheik Mahoobhi in 1974. It's due to their hard work, struggle and our customer's support that has made Muntaj what it is today.</p>
+          <p>We pride ourselves on creating a warm, welcoming atmosphere where guests can enjoy the vibrant flavors and rich culinary heritage of South India. Every meal tells a story of tradition, culture, and passion for excellent food.</p>
+          <div class="about-values">
+            <h3>Our Values</h3>
+            <ul class="values-list">
+              <li><i class="fas fa-check"></i> Authentic traditional recipes</li>
+              <li><i class="fas fa-check"></i> Fresh, high-quality ingredients</li>
+              <li><i class="fas fa-check"></i> Warm, welcoming atmosphere</li>
+              <li><i class="fas fa-check"></i> Preserving cultural culinary heritage</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about-gallery">
+          <img src="https://images.unsplash.com/photo-1596797038530-2c107aa8e1fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Traditional cooking">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Restaurant interior">
+          <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="South Indian dosa">
+          <img src="https://images.unsplash.com/photo-1589647363581-41888b8a8013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Biryani dish">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery section-fade-in">
+    <div class="container">
+      <div class="section-header">
+        <h2>Gallery</h2>
+        <div class="divider"></div>
+        <p class="section-description">Glimpses of our culinary creations, restaurant ambiance, and special moments.</p>
+      </div>
+      
+      <!-- Gallery Filters -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="food">Food</button>
+        <button class="filter-btn" data-filter="restaurant">Restaurant</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+      </div>
+      
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        <!-- Food Images -->
+        <div class="gallery-item" data-category="food">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Fine dining plate">
+        </div>
+        
+        <div class="gallery-item" data-category="food">
+          <img src="https://images.unsplash.com/photo-1555196301-cf4592a11eff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Appetizer plate">
+        </div>
+        
+        <div class="gallery-item" data-category="food">
+          <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Dessert plate">
+        </div>
+        
+        <div class="gallery-item" data-category="food">
+          <img src="https://images.unsplash.com/photo-1560717845-968823efbee1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Seafood dish">
+        </div>
+        
+        <!-- Restaurant Images -->
+        <div class="gallery-item" data-category="restaurant">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Restaurant interior">
+        </div>
+        
+        <div class="gallery-item" data-category="restaurant">
+          <img src="https://images.unsplash.com/photo-1519690889869-e705e59f72e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Bar area">
+        </div>
+        
+        <div class="gallery-item" data-category="restaurant">
+          <img src="https://images.unsplash.com/photo-1530229540764-5f6ab595fdbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Kitchen">
+        </div>
+        
+        <!-- Events Images -->
+        <div class="gallery-item" data-category="events">
+          <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+               alt="Private dining event">
+        </div>
+      </div>
+      
+      <!-- Lightbox Modal -->
+      <div id="gallery-modal" class="gallery-modal">
+        <div class="modal-content">
+          <button id="close-modal" class="close-modal">
+            <i class="fas fa-times"></i>
+          </button>
+          <img id="modal-image" src="" alt="Gallery image large">
+          <button id="prev-image" class="nav-btn prev-btn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button id="next-image" class="nav-btn next-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials section-fade-in">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Our Guests Say</h2>
+        <div class="divider"></div>
+      </div>
+      
+      <div class="testimonial-slider">
+        <div class="testimonial-slide">
+          <div class="testimonial-content">
+            <div class="quote-mark">"</div>
+            <p>The authentic South Indian flavors at S KOTA'S MUNTAJ transported me back to my hometown. The dosas were perfectly crispy and the chutneys were absolutely delicious. Will definitely be coming back for more!</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80" 
+                   alt="Priya Sharma">
+              <div class="author-info">
+                <p class="author-name">Priya Sharma</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-slide hidden">
+          <div class="testimonial-content">
+            <div class="quote-mark">"</div>
+            <p>My family and I visited S KOTA'S MUNTAJ for dinner and were blown away by the rich flavors in every dish. The Hyderabadi Biryani was outstanding, and the staff was incredibly friendly and attentive. A true gem!</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80" 
+                   alt="Raj Patel">
+              <div class="author-info">
+                <p class="author-name">Raj Patel</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-slide hidden">
+          <div class="testimonial-content">
+            <div class="quote-mark">"</div>
+            <p>As someone who appreciates authentic Indian cuisine, I can confidently say that S KOTA'S MUNTAJ serves some of the most genuine South Indian dishes I've had outside of India. The Kerala Fish Curry was exceptional with perfect spice balance.</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80" 
+                   alt="Meera Krishnan">
+              <div class="author-info">
+                <p class="author-name">Meera Krishnan</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <button class="testimonial-btn prev-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="testimonial-btn next-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <div class="testimonial-dots">
+          <button class="dot active"></button>
+          <button class="dot"></button>
+          <button class="dot"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section-fade-in">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <div class="divider"></div>
+        <p class="section-description">We'd love to hear from you. Reach out to ask a question or provide feedback.</p>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-form-container">
+          <div class="contact-form-wrapper">
+            <h3>Inquiries</h3>
+            <form id="contact-form" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone">
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" required></textarea>
+              </div>
+              
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary full-width">
+                  Send Message
+                </button>
+              </div>
+            </form>
+            <div id="form-success" class="form-success">
+              Thank you for your message! We'll get back to you shortly.
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-info-container">
+          <div class="contact-info-wrapper">
+            <h3>Visit Us</h3>
+            
+            <div class="hours-info">
+              <h4>Hours</h4>
+              <ul>
+                <li><span>Monday - Friday</span><span>11:00 AM - 10:00 PM</span></li>
+                <li><span>Saturday - Sunday</span><span>11:30 AM - 12:00 PM</span></li>
+              </ul>
+            </div>
+            
+            <div class="location-info">
+              <h4>Location</h4>
+              <p>P8VH+M5V, H B Colony</p>
+              <p>Visakhapatnam, Andhra Pradesh 530022</p>
+              <p class="contact-phone"><i class="fas fa-phone"></i> 09704809898</p>
+              <p class="contact-email"><i class="fas fa-envelope"></i> info@skotasmuntaj.com</p>
+            </div>
+            
+            <div class="map-container">
+              <!-- Interactive Google Map -->
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30569.014890542227!2d83.3118813767651!3d17.726741627507755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39431389e6973f%3A0x92d9c20395498468!2sHB%20Colony%2C%20Visakhapatnam%2C%20Andhra%20Pradesh%20530022!5e0!3m2!1sen!2sin!4v1648902409447!5m2!1sen!2sin" 
+                width="100%" 
+                height="250" 
+                style="border:0; border-radius: 8px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <h3>S KOTA'S HOTEL MUNTAJ</h3>
+          <p>Experience the authentic taste of South India with our traditional recipes and warm hospitality.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-yelp"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>P8VH+M5V, H B Colony<br>Visakhapatnam, Andhra Pradesh 530022</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>09704809898</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@skotasmuntaj.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2023 S KOTA'S HOTEL MUNTAJ. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
